@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <style>
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.571);
+            border: 1px solid rgb(218, 213, 213);
+
+            height: 50px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            ;
+            padding: 3px;
+            margin: 6px;
+
+            text-decoration: solid;
+            text-size-adjust: 100%;
+
+        }
+
+        .navbar1 {
+            background-color: rgb(0, 145, 255);
+            height: 70px;
+
+        }
+
+        .navbar1 ul {
+            list-style: none;
+        }
+
+        .navbar1 form input {
+
+            width: 600px;
+            height: 40px;
+
+        }
+
+        .navbar1 img {
+            size: 10px;
+            width: 100px;
+            margin: 5px;
+            display: inline-flex;
+
+        }
+
+        .navbar1 ul li {
+            display: inline-flex;
+
+        }
+
+        .navbar1 li {
+
+            padding: 5px;
+            margin-top: 0px;
+            margin: 6px;
+        }
+
+        .search {
+            height: 35px;
+            border-radius: 4px;
+
+        }
+
+        .search button {
+            height: 40px;
+            border-radius: 4px;
+        }
+
+        .nv a {
+            text-decoration: solid;
+            background-color: aliceblue;
+            color: rgb(0, 145, 255);
+            border-radius: 4px;
+            border: 1px solid black;
+            width: 100px;
+            height: 35px;
+            font-size: 30px;
+            font-family: Times New Roman;
+            visibility: none;
+        }
+
+        .nv li {
+            list-style: none;
+
+        }
+
+        .sub_menu1 {
+            display: none;
+            border-radius: 6px;
+            visibility: hidden;
+        }
+
+        .navbar1 ul li:hover .sub_menu1 {
+            display: block;
+            position: absolute;
+            background-color: rgb(181, 200, 248);
+            margin-top: 35px;
+            border-radius: 6px;
+            visibility: visible;
+        }
+
+        .navbar li a {
+            list-style: none;
+        }
+
+        .sub_menu2 {
+            display: none;
+        }
+
+        .navbar ul li:hover .sub_menu2 {
+            display: block;
+            position: absolute;
+            background-color: rgb(181, 200, 248);
+            border-radius: 2px;
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+
+        .navbar ul li:hover .sub_menu2 ul {
+            display: table;
+            margin: 5px;
+        }
+
+        .navbar ul li:hover .sub_menu2 ul li {
+            display: table-column;
+        }
+
+        .container img {
+            margin-top: 5px;
+            height: 600px;
+        }
+
+        .con1 {
+            border: 1px solid black;
+            width: 20%;
+            height: 361px;
+            margin-top: 5px;
+            float: left;
+            display: inline-block;
+            border-collapse: collapse;
+        }
+
+        .con3 img {
+            width: 200px;
+            height: 170px;
+
+        }
+
+        .container1 {
+            height: 150px;
+            width: auto;
+            border-bottom: 0.25px solid black;
+            border-radius: 2px;
+            background-color: #fff;
+            margin-bottom: 8px ;
+
+        }
+
+        .con1 {
+            width: 484px;
+            height: 361px;
+        }
+
+        .con {
+            margin: 40px;
+            padding: 3px 3px 6px 6px;
+            display: inline-block;
+
+
+        }
+
+        .con2 {
+            margin: 2px;
+            display: inline-block;
+        }
+
+        .con2 img {
+            width: 64px;
+            height: 64px;
+        }
+
+        .text {
+            width: 64px;
+            height: 39px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .para {
+            height: 39px;
+            width: auto;
+        }
+
+        .con a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .con1 a {
+            text-decoration: none;
+        }
+
+        .para2 {
+            text-decoration: none;
+            color: rgb(15, 157, 46);
+        }
+
+        .para {
+            text-decoration: none;
+            color: black;
+            font-size: x-large;
+            width: 230px;
+            height: auto;
+        }
+
+        .para3 {
+            text-decoration: none;
+            color: gray;
+            font-size: large;
+        }
+
+        .con5 {
+            border: 1px solid black;
+            width: 230px;
+            height: 361px;
+            margin-top: 5px;
+            float: left;
+            display: inline-block;
+            border-collapse: collapse;
+
+
+        }
+
+        .more {
+           
+            border-radius: 1px;
+            width: 150px;
+            background-color: rgb(0, 145, 255);
+            color:#fff;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .container {
+            width: auto;
+            height: 372px;
+            border-radius: 4px;
+            padding: 4px;
+            display: inline-flex;
+            border: none;
+            box-shadow: 1px 1px;
+            background-color: #fff;
+            align-self: center;
+            overflow:hidden;
+        }
+
+        .con5 {
+            font-size: xx-large;
+            width: 238px;
+            height: 361px;
+            border: none;
+        }
+
+        .con1 {
+            border: none;
+            width: 232px;
+            height: 341px;
+
+        }
+
+        .con6 {
+            margin-top:100px;
+            border: none;
+            width: 200px;
+            height: auto;
+            text-align: center;
+            font-size: 20px;
+        }
+        .con6 a{
+            text-decoration:none ;
+            color: #fff;
+
+        }
+        .con5 img {
+            height: 80px;
+            width: 230px;
+            margin: 0px;
+            position:0px bottom;
+        }
+        body{
+            background-color: rgb(230, 232, 235);
+            
+        }
+        #con1{
+            margin-top: 8px;
+        }
+        /* .all{
+         align-content: center;
+         width:auto;
+         height: 5673px;
+        
+
+        } */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <center>
+
+            <nav class="navbar1">
+                <ul>
+                    <li> <img
+                            src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png">
+                    </li>
+
+
+                    <li>
+                        <div>
+                            <form action="/search">
+                                <div class="search" title="search">
+                                    <input class="search" type="text" placeholder="Search for producs,brands and more"
+                                        title="Search for producs,brands and more">
+
+                                    <button class="search" type="submit">search</button>
+                                    </button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nv"><a href="#">Login</a>
+                        <div class="sub_menu1">
+                            <ul>
+                                <li>New Customer?</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </nav>
+        </center>
+    
+    <center>
+        
+            <div class="container1">
+                <div class="con"><a href="#">
+                        <div class="con2">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100">
+                        </div>
+                        <div class="text1">Top offer</div>
+                    </a>
+                </div>
+                <div class="con"><a href="#">
+                        <div class="con2">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100">
+                        </div>
+                        <div class="text1">Grocery</div>
+                    </a>
+                </div>
+                <div class="con"><a href="#">
+                        <div class="con2">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100">
+                        </div>
+                        <div class="text1">Mobile</div>
+                    </a>
+                </div>
+                <div class="con"><a href="#">
+                        <div class="con2">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100">
+                        </div>
+                        <div class="text1">Fashion</div>
+                    </a>
+                </div>
+                <div class="con"><a href="#">
+                        <div class="con2">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100">
+                        </div>
+                        <div class="text1">Electronic</div>
+                    </a>
+                </div>
+                <div class="con"><a href="#">
+                        <div class="con2">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100">
+                        </div>
+                        <div class="text1">Home</div>
+                    </a>
+                </div>
+                <div class="con"><a href="#">
+                        <div class="con2">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100">
+                        </div>
+                        <div class="text1">Appliances</div>
+                    </a>
+                </div>
+            </div>
+        
+    </center>
+
+    <!-- <nav class="navbar">
+                <ul>
+                    <li><a href="#">Electronics
+                             <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="RWB9Wm">
+                 <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_2JzwqO"></path>
+                </svg>
+                        </a>
+                        <div class="sub_menu2">
+                            <ul>
+                                <li><a href="#">MObiles</a></li>
+                                <li><a href="#">Mi</a></li>
+                                <li><a href="#">Poco</a></li>
+                                <li><a href="#">Realme</a></li>
+                                <li><a href="#">Samsung</a></li>
+                                <li><a href="#">Oneplus</a></li>
+                                <li><a href="#">Oppo</a></li>
+                                <li><a href="#">Inflix</a></li>
+                                <li><a href="#">Vivo</a></li>
+                                <li><a href="#">Honor</a></li>
+                                <li><a href="#">Asus</a></li>
+                                <li><a href="#">Poco X2</a></li>
+                                <li><a href="#">iPhone SE</a></li>
+                                <li><a href="#">Motorola razr</a></li>
+                                <li><a href="#">Realme narzo 10A</a></li>
+                                <li><a href="#">inflix Hot 9</a></li>
+                                <li><a href="#">Realme narzo 10</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">MObiles</a></li>
+                                <li><a href="#">Mi</a></li>
+                                <li><a href="#">Poco</a></li>
+                                <li><a href="#">Realme</a></li>
+                                <li><a href="#">Samsung</a></li>
+                                <li><a href="#">Oneplus</a></li>
+                                <li><a href="#">Oppo</a></li>
+                                <li><a href="#">Inflix</a></li>
+                                <li><a href="#">Vivo</a></li>
+                                <li><a href="#">Honor</a></li>
+                                <li><a href="#">Asus</a></li>
+                                <li><a href="#">Poco X2</a></li>
+                                <li><a href="#">iPhone SE</a></li>
+                                <li><a href="#">Motorola razr</a></li>
+                                <li><a href="#">Realme narzo 10A</a></li>
+                                <li><a href="#">inflix Hot 9</a></li>
+                                <li><a href="#">Realme narzo 10</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Tvs & Appliance </a></li>
+                    <li><a href="#"> Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Baby & Kids</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Sports,Books & More</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li>Offer Zone</li>
+
+                </ul>
+            </nav> -->
+
+
+   <center> 
+        <div class="container">
+            <div class="con5">
+                <div class="con6">
+                    Best of Electonics
+                    <center><a
+                            href="https://www.flipkart.com/offers-list/beauty-food-toys-more?screen=dynamic&pk=themeViews%3DDT-OMU-2%3ADeal-DT~widgetType%3DdealCard~contentType%3Dneo&wid=6.dealCard.OMU_5&otracker=hp_omu_Beauty%252C%2BFood%252C%2BToys%2B%2526%2Bmore_5&otracker1=hp_omu_PINNED_neo%2Fmerchandising_Beauty%252C%2BFood%252C%2BToys%2B%2526%2Bmore_NA_wc_view-all_5">
+                            <div class="more"> View all</div>
+                
+                </a>
+    </center></div>
+<br><br>
+             <img src=" https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90"></div>
+
+
+    <div class="con1"><a href="#">
+            <div class="con3"> <img
+                    src="https://rukminim1.flixcart.com/image/312/312/kw9krrk0/dslr-camera/1/h/j/-original-imag8z5weagzztda.jpeg?q=70">
+            </div>
+            <div class="con4">
+                <center>
+                    <p class="para">Top mirrorless camera</p>
+                    <p class="para2">Shop Now!</p>
+                </center>
+            </div>
+        </a>
+        <p class="para3">Canon, Sony, Fujifilm...</p>
+    </div>
+
+    <div class="con1"><a href="#">
+            <div class="con3"> <img
+                    src="https://rukminim1.flixcart.com/image/612/612/kgmla4w0/tripod/tripod/h/h/a/digitek-dtr-550-lw-original-imafwtrbagrpqg3c.jpeg?q=70">
+            </div>
+            <div class="con4">
+                <center>
+                    <p class="para">DIGITEK DTR LW 550 Trip0d</p>
+                    <p class="para2">Shop Now!</p>
+                </center>
+            </div>
+        </a>
+        <p class="para3">..</p>
+    </div>
+    <div class="con1"><a href="#">
+            <div class="con3"> <img
+                    src="https://rukminim1.flixcart.com/image/200/200/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70">
+            </div>
+            <div class="con4">
+                <center>
+                    <p class="para">Printer</p>
+                    <p class="para2">Shop Now!</p>
+                </center>
+            </div>
+        </a>
+        <p class="para3">Hp</p>
+    </div>
+    
+    <div class="con1"><a href="#">
+        <div class="con3"> <img
+                src="https://rukminim1.flixcart.com/image/200/200/kfmv9u80/monitor/9/n/v/ha220q-um-ww0si-a01-acer-original-imafwfjq3gzgjvz5.jpeg?q=70">
+        </div>
+        <div class="con4">
+            <center>
+                <p class="para">Moniter</p>
+                <p class="para2">Shop Now!</p>
+            </center>
+        </div>
+    </a>
+    <p class="para3">acer</p>
+</div>
+ 
+<div class="con1"><a href="#">
+    <div class="con3"> <img
+            src="https://rukminim1.flixcart.com/image/200/200/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70">
+    </div>
+    <div class="con4">
+        <center>
+            <p class="para">Best of Hair Dryers</p>
+            <p class="para2">Shop Now!</p>
+        </center>
+    </div>
+</a>
+<p class="para3">Philips,Nova,...</p>
+</div>
+
+</div>
+
+<!--next container start-->
+<div class="container" id="con1">
+    <div class="con5">
+        <div class="con6">
+            Beauty,food,toys&more
+            <center><a
+                    href="https://www.flipkart.com/offers-list/beauty-food-toys-more?screen=dynamic&pk=themeViews%3DDT-OMU-2%3ADeal-DT~widgetType%3DdealCard~contentType%3Dneo&wid=6.dealCard.OMU_5&otracker=hp_omu_Beauty%252C%2BFood%252C%2BToys%2B%2526%2Bmore_5&otracker1=hp_omu_PINNED_neo%2Fmerchandising_Beauty%252C%2BFood%252C%2BToys%2B%2526%2Bmore_NA_wc_view-all_5">
+                    <div class="more"> View all</div>
+        
+        </a>
+</center></div>
+<br><br>
+     <img src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90"></div>
+
+
+<div class="con1"><a href="#">
+    <div class="con3"> <img
+            src="https://rukminim1.flixcart.com/image/200/200/jlph9jk0/cycle/h/f/k/skyper-26t-sskp26bk0001-16-hero-original-imaf8ru5xysfgtmx.jpeg?q=70">
+    </div>
+    <div class="con4">
+        <center>
+            <p class="para">Premium Non-Geared Cycles</p>
+            <p class="para2">Shop Now!</p>
+        </center>
+    </div>
+</a>
+<p class="para3">Hero & more</p>
+</div>
+
+<div class="con1"><a href="#">
+    <div class="con3"> <img
+            src="https://rukminim1.flixcart.com/image/612/612/kgmla4w0/tripod/tripod/h/h/a/digitek-dtr-550-lw-original-imafwtrbagrpqg3c.jpeg?q=70">
+    </div>
+    <div class="con4">
+        <center>
+            <p class="para">DIGITEK DTR LW 550 Trip0d</p>
+            <p class="para2">Shop Now!</p>
+        </center>
+    </div>
+</a>
+<p class="para3">..</p>
+</div>
+<div class="con1"><a href="#">
+    <div class="con3"> <img
+            src="https://rukminim1.flixcart.com/image/200/200/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70">
+    </div>
+    <div class="con4">
+        <center>
+            <p class="para">Printer</p>
+            <p class="para2">Shop Now!</p>
+        </center>
+    </div>
+</a>
+<p class="para3">Hp</p>
+</div>
+
+<div class="con1"><a href="#">
+<div class="con3"> <img
+        src="https://rukminim1.flixcart.com/image/200/200/kfmv9u80/monitor/9/n/v/ha220q-um-ww0si-a01-acer-original-imafwfjq3gzgjvz5.jpeg?q=70">
+</div>
+<div class="con4">
+    <center>
+        <p class="para">Moniter</p>
+        <p class="para2">Shop Now!</p>
+    </center>
+</div>
+</a>
+<p class="para3">acer</p>
+</div>
+
+<div class="con1"><a href="#">
+<div class="con3"> <img
+    src="https://rukminim1.flixcart.com/image/200/200/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70">
+</div>
+<div class="con4">
+<center>
+    <p class="para">Best of Hair Dryers</p>
+    <p class="para2">Shop Now!</p>
+</center>
+</div>
+</a>
+<p class="para3">Philips,Nova,...</p>
+</div>
+
+</div>
+
+
+</center>
+
+</header>
+
+</body>
+<!-- 
+<address>
+    <table>
+        <tr>
+            <td>
+                Manish Kumar 
+            </td>
+<th>
+more about:
+</th>
+        </tr>
+        <tr><td>
+            B-Tech Computer Science And Engineering  </td>
+            <a href=""> <td>  Linkedin</td></a>
+        </tr>
+    </table>
+</address>  -->
+
+</html>
